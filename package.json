@@ -2,12 +2,17 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "knex": "^0.20.13",
+    "knex": "^0.21.1",
     "migration": "^0.3.0",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.2.0"
   },
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.2"
   }
 }

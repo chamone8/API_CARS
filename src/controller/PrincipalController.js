@@ -15,7 +15,7 @@ module.exports = {
                 ano
             });
             if (dados) {
-                res.status(200).json({ ID: dados })
+                res.status(200).json(dados) 
             } else {
                 res.status(404).json({ message: "Dados não encontrados" })
             }
@@ -31,7 +31,7 @@ module.exports = {
             const dados = await connection('carros').select('*');
 
             if (dados) {
-                res.status(200).json({ ID: dados })
+                res.status(200).json(dados )
             } else {
                 res.status(404).json({ message: "Dados não encontrados" })
             }
